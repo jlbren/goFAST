@@ -1,104 +1,73 @@
 body {
 	margin: auto;
-	background: #ebdb98;
-	background-image: -webkit-linear-gradient(left,
-	#700c54 0px,
-	#700c54 200px,
-	#ebdb98 200px);
-	background-image: linear-gradient(left,
-	#700c54 0px,
-	#700c54 200px,
-	#ebdb98 200px);
-	background-image: -moz-linear-gradient(left,
-	#700c54 0px,
-	#700c54 200px,
-	#ebdb98 200px);
-	background-repeat: no-repeat;
+	background-image: url(light_grey.png);
 	background-attachment: fixed;
-	color: 	#ebdb98;
+	color: #000000;
 	font-size: 14px;
 	font-family: "Lucida Console", Monaco, monospace;
 }
 
 header {
-	border-right: 5px solid #700c54;
-	border-bottom: 5px solid #700c54;
-	border-top: 5px solid #700c54;
-	background: #76abbb;
-	margin-left: 200px;
-	padding: 25px;
+	background-image: -webkit-linear-gradient(top,
+	#c5c3d6 0px,
+	#37fdfc 250px);
+	background-image: linear-gradient(top,
+	#c5c3d6 0px,
+	#37fdfc 250px);
+	background-image: -moz-linear-gradient(top,
+	#c5c3d6 0px,
+	#37fdfc 250px);
+	text-align: center;
 }
 
 nav {
-	background: #700c54;
-	float: left;
-	position: absolute;
-	font-size: 18px;	
+	font-size: 18px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #008080;
+    top: 230px;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+	display: block;
+    color: #c5c3d6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+	color: #c5c3d6;
+	background-color: #000000;
 }
 
 main {
-	margin-top: 20px;
-	margin-left: 250px;
-	margin-right: 100px;
-	color: #586492;
+	padding: 20px;
+	color: #000000;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-main a:link {
-	color: #700c54;
+p {
+	text-align: center;
 }
 
-main a:visited {
-	color: #700c54;
-}
-
-main a:hover {
-	color: #76abbb;
-}
-
-main a:active {
-	color: #700c54;
-}
-
-table, th, tr, td {
-	padding: 10px;
-}
-
-a:link {
-	color: #700c54;
-	text-decoration: none;
-}
-
-a:visited {
-	color: #586492;
+a {
+	color: #008080;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #ebdb98;
-	text-decoration: underline;
+	color: #000000;
 }
 
-a:active {
-	color: #700c54;
-	text-decoration: none;
-}
 
-ul a:link {
-	color: #ebdb98;
-	font-size: 30px;
-}
-
-ul a:visited {
-	color: #ebdb98;
-	font-size: 30px;
-}
-
-ul a:hover {
-	color: #ebdb98;
-	font-size: 35px;
-}
-
-ul a:active {
-	color: #ebdb98;
-	font-size: 30px;
-}
