@@ -7,15 +7,14 @@
 <!-- css styles... -->
 <link rel="stylesheet" type="text/css" href="gofast2.css">
 
-<script src="jquery-3.1.1.js"></script>
-<script type="text/javascript" src="testjson.js">
-<!-- test js function -->
-<script type = "text/javascript" > 
-function testResults (form) {
-	var testVar = form.query.value;
-	alert("you typed: " + testVar); 
-}
-</script> 
+<!-- jquery from web host -->
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous">
+</script>
+ 
+<script type="text/javascript" src="testjson.js"></script>
 </head>
 <body>
 <header>
@@ -34,7 +33,8 @@ A web application for connecting academics to the science side of Twitter.
 </nav>
 <main>
 <p>
-Enter your query here:<br />
+Enter your PMCID here (e.g. 25081398):<br />
+ 
 </p>
 <center>
 <form>
@@ -44,7 +44,10 @@ Enter your query here:<br />
        onClick="testJSON(this.form.query)" ; >
 
 </form>
+<section class="pmc-output">
+</section>
 </center>
 </main>
 </body>
 </html>
+
