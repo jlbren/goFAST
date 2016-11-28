@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>goFAST</title>
+<meta name="description" content="The new web application goFAST">
+<!-- css styles... -->
+<link rel="stylesheet" type="text/css" href="gofast2.css">
+
+<!-- jquery from web host -->
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous">
+</script>
+ 
+<script type="text/javascript" src="getPMC.js"></script>
+</head>
+<body>
+<header>
+<h1>goFAST</h1>
+<br />
+A web application for connecting academics to the science side of Twitter.
+<br /><br />
+<img src="logo-small2.png">
+</header>
+<nav>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="search.html">Search</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+<main>
+<p>
+Enter your PMCID here (e.g. 25081398):<br />
+ 
+</p>
+<center>
+<form>
+<input type="text" name="query"><br />
+<input type="button" name = "search"
+       value="GO!"
+       onClick="getPMC(this.form.query)" ; >
+
+</form>
+<section class="pmc-output">
+</section>
+</center>
+</main>
+</body>
+</html>
+
