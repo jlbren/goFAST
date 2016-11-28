@@ -6,6 +6,13 @@
 <meta name="description" content="The new web application goFAST">
 <!-- css styles... -->
 <link rel="stylesheet" type="text/css" href="gofast2.css">
+<!-- test js function -->
+<script type = "text/javascript" > 
+function testResults (form) {
+	var testVar = form.query.value;
+	alert("you typed: " + testVar); 
+}
+</script> 
 </head>
 <body>
 <header>
@@ -29,7 +36,10 @@ Enter your query here:<br />
 <center>
 <form>
 <input type="text" name="query"><br />
-<input type="submit" value="Search"><br />
+<input type="button" name = "search"
+       value="GO!"
+       onClick="testResults(this.form)" ; >
+
 </form>
 </center>
 </main>
