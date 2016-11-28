@@ -6,6 +6,9 @@
 <meta name="description" content="The new web application goFAST">
 <!-- css styles... -->
 <link rel="stylesheet" type="text/css" href="gofast2.css">
+
+<script src="jquery-3.1.1.js"></script>
+<script type="text/javascript" src="testjson.js">
 <!-- test js function -->
 <script type = "text/javascript" > 
 function testResults (form) {
@@ -38,7 +41,7 @@ Enter your query here:<br />
 <input type="text" name="query"><br />
 <input type="button" name = "search"
        value="GO!"
-       onClick="testResults(this.form)" ; >
+       onClick="testJSON(this.form.query)" ; >
 
 </form>
 </center>
