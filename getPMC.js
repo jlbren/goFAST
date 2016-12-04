@@ -7,7 +7,6 @@ function getPMC(query){
 		{format: "json"}
  		console.log("success");
  		console.log(JSON.stringify(result));
-		console.log(JSON.parse(result)); 	
 	})
 	.fail(function (jqxhr, status, error) {
         	alert("fail"); 	
