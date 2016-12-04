@@ -1,15 +1,16 @@
 function getPMC(query){
-	var pmcAPI="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&rettype=abstract&id=";
-	var  pmcURL=pmcAPI + query.value ; 
+	var pmcPref="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/" 
+	+ "esummary.fcgi?db=pubmed&retmode=json&rettype=abstract&id=";
+	var  pmcURL=pmcPref + query.value ; 
 	console.log("PMC query: " + pmcURL); 
-	$.getJSON(pmcURL, function(abs) {
+	$.getJSON(pmcURL, function(result){
 		{format: "json"}
- 		console.log("success"); 	
- 		console.log(JSON.stringify(abs));
-	       alert("Dev note: check console for output"); 	
+ 		console.log("success");
+ 		console.log(JSON.stringify(result));
+		console.log(JSON.parse(result)); 	
 	})
 	.fail(function (jqxhr, status, error) {
-        	console.log("fail"); 	
+        	alert("fail"); 	
 		console.log('error', status, error) }
 	);
 };
